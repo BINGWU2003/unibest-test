@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import { useThemeStore } from '@/store'
 import { safeAreaInsets } from '@/utils/systemInfo'
 
 defineOptions({
@@ -15,24 +14,11 @@ definePage({
   },
 })
 
-const themeStore = useThemeStore()
-
-const description = ref(
-  'unibest 是一个集成了多种工具和技术的 uniapp 开发模板，由 uniapp + Vue3 + Ts + Vite5 + UnoCss + VSCode 构建，模板具有代码提示、自动格式化、统一配置、代码片段等功能，并内置了许多常用的基本组件和基本功能，让你编写 uniapp 拥有 best 体验。',
-)
 console.log('index/index 首页打印了')
 
 onLoad(() => {
   console.log('测试 uni API 自动引入: onLoad')
 })
-
-// #region gotoAbout
-function gotoAbout() {
-  uni.navigateTo({
-    url: '/pages-sub/about/about',
-  })
-}
-// #endregion
 </script>
 
 <template>
@@ -41,7 +27,7 @@ function gotoAbout() {
       <image src="/static/logo.svg" alt="" class="mx-auto block h-28 w-28" />
     </view>
     <view class="mt-4 text-center text-4xl text-[#d14328]">
-      unibest
+      unibest best
     </view>
     <view class="mb-8 mt-2 text-center text-2xl">
       最好用的 uniapp 开发模板

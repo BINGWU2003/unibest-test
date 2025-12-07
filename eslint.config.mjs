@@ -24,7 +24,7 @@ export default uniHelper({
   rules: {
     'no-useless-return': 'off',
     'no-console': 'off',
-    'no-unused-vars': 'off',
+    'no-unused-vars': 'error',
     'vue/no-unused-refs': 'off',
     'unused-imports/no-unused-vars': 'off',
     'eslint-comments/no-unlimited-disable': 'off',
